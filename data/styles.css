@@ -95,6 +95,8 @@
 .paragraph {
   text-align:left;
 }
+.line {
+}
 .icon {
 }
 textarea, select, input, button { outline: none; }
