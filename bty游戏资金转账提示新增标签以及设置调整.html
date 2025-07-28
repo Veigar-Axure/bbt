@@ -49,56 +49,40 @@
     <div id="base" class="">
 
       <!-- Unnamed (矩形) -->
-      <div id="u43" class="ax_default box_2">
-        <div id="u43_div" class=""></div>
-        <div id="u43_text" class="text ">
+      <div id="u45" class="ax_default box_2">
+        <div id="u45_div" class=""></div>
+        <div id="u45_text" class="text ">
           <p><span>BTY游戏资金转账提示新增标签以及设置调整</span></p>
         </div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u44" class="ax_default paragraph">
-        <div id="u44_div" class=""></div>
-        <div id="u44_text" class="text ">
-          <p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">需求内容：</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">1.需求路径： 用户管理→标签管理→手动标签</span></p><ul><li style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">新增手动标签【</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">场馆转出资金风险</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">】；</span></li><li style="font-size:13px;"><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">在该标签内会有被打上标签的用户展示列表，增加删除已打上标签的用户功能</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">；</span></li></ul><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">2.按照场馆转出到平台中心钱包（同场馆）时，根据风控部门设置的金额为基础条件触发；</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">设置路径如下：</span></p><ul><li style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">新增页面：风控系统-风控设置-</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;color:#000000;">风控标签条件配置</span></li></ul><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">触发条件如下：</span></p><ul><li style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">条件一：风控部后台设置的最低金额为起始；</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">如符合则走条件2</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">，</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">不符合则进入条件3；</span></li><li style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">条件二：风控部后台设置的转入转出（</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">转出大于转入，不符合则忽略</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">）倍率为第二条件；</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">符合则打上标签</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">，</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">进入待审核列表</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">；不符合则不做标签处理，正常进入提款审核流程；</span></li><li style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">条件三：</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">当条件一不生效时会走条件三</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">，当风控部后台设置最低金额不达标时，会判定条件三配置倍率，如符合要求则</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">增加标签</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">并进入</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">待审核列表，</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;color:#000000;">如不符合则正常走提款审核流程；</span></li><li style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">备注：标签需要技术在代码层增加</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">有标签则进入待审核列表逻辑；</span></li><li style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">增加开关配置，开启则生效，不开启则不生效；</span></li><li style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">增加币种配置；所有币种</span></li></ul><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">例如：</span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">设置条件1为：一万，设置条件2为：5倍；</span></p><ul><li style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">即会员A，转入FB体育1000，转出FB体育9900，条件1未达成，</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">不触发条件2，触发条件3，如不符合条件3要求则不触发标签</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">，直接进入正常提款审核；</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">如符合条件3要求则增加标签，并进入待审核列表</span></li><li style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">即会员A，转入DB体育2100，转出DB体育10000，条件1达成，</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">触发条件2</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">，条件2未达成，不触发标签，进入正常提款审核。</span></li><li style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">即会员A，转入AG真人1500，转出AG真人10100，达成条件1，进入条件2，达成条件2，</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">触发标签</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">，进入</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">待审核列表</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">（</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">如有配置，后台配置或者技术配置</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">）</span></li></ul><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">3.标签结束条件：</span></p><ul><li style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">当触发标签当次，</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">提款审核被风控通过</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">，标签取消。</span></li><li style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">当触发标签当次，</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">减币审核通过</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">，则标签取消。</span></li></ul><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">例如：</span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">会员被打上标签，提款审核未通过，会分为两种情况，</span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">转出转入异常----进入减币流程----扣除通过后，即取消标签；</span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">其他原因拒绝----不取消标签----用户补齐内容后，提款----进入提款审核搁置---审核通过后---取消标签</span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 审核不通过---进入减币流程----扣除通过后，即取消标签；</span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">4.配置内容调整时，</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">保留已经打上标签的用户（不做任何更改）</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">，后续用户判定按照</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">新设置内容，正常打上标签</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">。</span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">5.管理后台是没有将标签加入</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">待审核列表配置的</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">，</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">所以该需求只要被打上标签</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">的用户需要在</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">代码层直接判定加入到待审核列表中，让风控进行人工审核</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">。</span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">6.在判定时出现网络超时、未响应等情况，</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">则不进行标签增加</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">。</span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">7.在审核管理---风控提款审核---搜索条件---风控类型---增加选项--名称为：</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;font-size:13px;color:#D9001B;">场馆转出资金风险</span></p><p style="font-size:13px;"><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;"><br></span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;color:#000000;">8.如该标签需要有风控类型归类，可添加，如没有就不需要添加。</span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p>
+      <div id="u46" class="ax_default paragraph">
+        <div id="u46_div" class=""></div>
+        <div id="u46_text" class="text ">
+          <p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">需求内容：</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">1.需求路径： 用户管理→标签管理→手动标签</span></p><ul><li style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">新增手动标签【</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">场馆转出资金风险</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">】；</span></li><li style="font-size:13px;"><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">在该标签内会有被打上标签的用户展示列表，增加删除已打上标签的用户功能</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">；</span></li></ul><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">2.按照场馆转出到平台中心钱包（同场馆）时，根据风控部门设置的金额为基础条件触发；</span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">设置路径如下：</span></p><ul><li style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">新增页面：风控系统-风控设置-</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;color:#000000;">风控标签条件配置</span></li></ul><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">触发条件如下：</span></p><ul><li style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">条件一：风控部后台设置的最低金额为起始；</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">如符合则走条件2</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">，</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">不符合则进入条件3；</span></li><li style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">条件二：风控部后台设置的转入转出（</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">转出大于转入，不符合则忽略</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">）倍率为第二条件；</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">符合则打上标签</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">，</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">进入待审核列表</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">；不符合则不做标签处理，正常进入提款审核流程；</span></li><li style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">条件三：</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">当条件一不生效时会走条件三</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">，当风控部后台设置最低金额不达标时，会判定条件三配置倍率，如符合要求则</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">增加标签</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">并进入</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">待审核列表，</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;color:#000000;">如不符合则正常走提款审核流程；</span></li><li style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">备注：标签需要技术在代码层增加</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">有标签则进入待审核列表逻辑；</span></li><li style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">增加开关配置，开启则生效，不开启则不生效；</span></li><li style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">增加币种配置；所有币种</span></li></ul><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">例如：</span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">设置条件1为：2000（转入条件），设置条件2为：5倍；</span></p><ul><li style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">即会员A，转入FB体育1000，转出FB体育9900，条件1未达成，</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">不触发条件2，触发条件3，如不符合条件3要求则不触发标签</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">，直接进入正常提款审核；</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">如符合条件3要求则增加标签，并进入待审核列表</span></li><li style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">即会员A，转入DB体育2100，转出DB体育10000，条件1达成，</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">触发条件2</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">，条件2未达成，不触发标签，进入正常提款审核。</span></li><li style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">即会员A，转入AG真人2500，转出AG真人25100，达成条件1，进入条件2，达成条件2，</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">触发标签</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">，进入</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">待审核列表</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">（</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">如有配置，后台配置或者技术配置</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">）</span></li></ul><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">3.标签结束条件：</span></p><ul><li style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">当触发标签当次，</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">提款审核被风控通过</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">，标签取消。</span></li><li style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">当触发标签当次，</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">减币审核通过</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">，则标签取消。</span></li></ul><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">例如：</span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">会员被打上标签，提款审核未通过，会分为两种情况，</span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">转出转入异常----进入减币流程----扣除通过后，即取消标签；</span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">其他原因拒绝----不取消标签----用户补齐内容后，提款----进入待审核---审核通过后---取消标签</span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 审核不通过---进入减币流程----扣除通过后，即取消标签；</span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">4.配置内容调整时，</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">保留已经打上标签的用户（不做任何更改）</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">，后续用户判定按照</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">新设置内容，正常打上标签</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">。</span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">5.管理后台是没有将标签加入</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">待审核列表配置的</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">，</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">所以该需求只要被打上标签</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">的用户需要在</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">代码层直接判定加入到待审核列表中，让风控进行人工审核</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">。</span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">6.在判定时出现网络超时、未响应等情况，</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">则不进行标签增加</span><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">。</span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">7.在审核管理---风控提款审核---搜索条件---风控类型---增加选项--名称为：</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;font-size:13px;color:#D9001B;">场馆转出资金风险</span></p><p style="font-size:13px;"><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;"><br></span></p><p style="font-size:13px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;color:#000000;">8.如该标签需要有风控类型归类，可添加，如没有就不需要添加。</span></p><p style="font-size:12px;"><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;"><br></span></p>
         </div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u45" class="ax_default _三级标题">
-        <div id="u45_div" class=""></div>
-        <div id="u45_text" class="text ">
+      <div id="u47" class="ax_default _三级标题">
+        <div id="u47_div" class=""></div>
+        <div id="u47_text" class="text ">
           <p><span>管理后台路径：</span></p>
         </div>
       </div>
 
       <!-- Unnamed (图片 ) -->
-      <div id="u46" class="ax_default _图片_">
-        <img id="u46_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u46.png"/>
-        <div id="u46_text" class="text " style="display:none; visibility: hidden">
+      <div id="u48" class="ax_default _图片_">
+        <img id="u48_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u48.png"/>
+        <div id="u48_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (图片 ) -->
-      <div id="u47" class="ax_default _图片_">
-        <img id="u47_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u47.png"/>
-        <div id="u47_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u48" class="ax_default box_1">
-        <div id="u48_div" class=""></div>
-        <div id="u48_text" class="text ">
-          <p><span>风控标签条件配置</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u49" class="ax_default box_1">
-        <div id="u49_div" class=""></div>
+      <div id="u49" class="ax_default _图片_">
+        <img id="u49_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u49.png"/>
         <div id="u49_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
@@ -108,23 +92,23 @@
       <div id="u50" class="ax_default box_1">
         <div id="u50_div" class=""></div>
         <div id="u50_text" class="text ">
-          <p><span>场馆转出资金风险</span></p>
+          <p><span>风控标签条件配置</span></p>
         </div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u51" class="ax_default label">
+      <div id="u51" class="ax_default box_1">
         <div id="u51_div" class=""></div>
-        <div id="u51_text" class="text ">
-          <p><span>游戏币种：</span></p>
+        <div id="u51_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
         </div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u52" class="ax_default label">
+      <div id="u52" class="ax_default box_1">
         <div id="u52_div" class=""></div>
         <div id="u52_text" class="text ">
-          <p><span>CNY</span></p>
+          <p><span>场馆转出资金风险</span></p>
         </div>
       </div>
 
@@ -132,21 +116,23 @@
       <div id="u53" class="ax_default label">
         <div id="u53_div" class=""></div>
         <div id="u53_text" class="text ">
-          <p><span>条件1：最低转入金额设置</span></p>
+          <p><span>游戏币种：</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (文本框) -->
-      <div id="u54" class="ax_default text_field">
+      <!-- Unnamed (矩形) -->
+      <div id="u54" class="ax_default label">
         <div id="u54_div" class=""></div>
-        <input id="u54_input" type="text" value="" class="u54_input"/>
+        <div id="u54_text" class="text ">
+          <p><span>CNY</span></p>
+        </div>
       </div>
 
       <!-- Unnamed (矩形) -->
       <div id="u55" class="ax_default label">
         <div id="u55_div" class=""></div>
         <div id="u55_text" class="text ">
-          <p><span>条件2：当条件1符合时，转出对比转入差额设置</span></p>
+          <p><span>条件1：最低转入金额设置</span></p>
         </div>
       </div>
 
@@ -160,133 +146,131 @@
       <div id="u57" class="ax_default label">
         <div id="u57_div" class=""></div>
         <div id="u57_text" class="text ">
-          <p><span>游戏币种：</span></p>
+          <p><span>条件2：当条件1符合时，转出对比转入差额设置</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (矩形) -->
-      <div id="u58" class="ax_default label">
+      <!-- Unnamed (文本框) -->
+      <div id="u58" class="ax_default text_field">
         <div id="u58_div" class=""></div>
-        <div id="u58_text" class="text ">
-          <p><span>VND</span></p>
-        </div>
+        <input id="u58_input" type="text" value="" class="u58_input"/>
       </div>
 
       <!-- Unnamed (矩形) -->
       <div id="u59" class="ax_default label">
         <div id="u59_div" class=""></div>
         <div id="u59_text" class="text ">
-          <p><span>条件1：最低转入金额设置</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (文本框) -->
-      <div id="u60" class="ax_default text_field">
-        <div id="u60_div" class=""></div>
-        <input id="u60_input" type="text" value="" class="u60_input"/>
-      </div>
-
-      <!-- Unnamed (形状) -->
-      <div id="u61" class="ax_default icon">
-        <img id="u61_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u61.svg"/>
-        <div id="u61_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u62" class="ax_default primary_button">
-        <div id="u62_div" class=""></div>
-        <div id="u62_text" class="text ">
-          <p><span>保存</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u63" class="ax_default primary_button">
-        <div id="u63_div" class=""></div>
-        <div id="u63_text" class="text ">
-          <p><span>保存</span></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (形状) -->
-      <div id="u64" class="ax_default _形状1">
-        <img id="u64_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u64.svg"/>
-        <div id="u64_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (形状) -->
-      <div id="u65" class="ax_default icon">
-        <img id="u65_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u61.svg"/>
-        <div id="u65_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (形状) -->
-      <div id="u66" class="ax_default _形状1">
-        <img id="u66_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u64.svg"/>
-        <div id="u66_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u67" class="ax_default label">
-        <div id="u67_div" class=""></div>
-        <div id="u67_text" class="text ">
           <p><span>游戏币种：</span></p>
         </div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u68" class="ax_default label">
-        <div id="u68_div" class=""></div>
-        <div id="u68_text" class="text ">
-          <p><span>USDT</span></p>
+      <div id="u60" class="ax_default label">
+        <div id="u60_div" class=""></div>
+        <div id="u60_text" class="text ">
+          <p><span>VND</span></p>
         </div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u69" class="ax_default primary_button">
-        <div id="u69_div" class=""></div>
-        <div id="u69_text" class="text ">
+      <div id="u61" class="ax_default label">
+        <div id="u61_div" class=""></div>
+        <div id="u61_text" class="text ">
+          <p><span>条件1：最低转入金额设置</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本框) -->
+      <div id="u62" class="ax_default text_field">
+        <div id="u62_div" class=""></div>
+        <input id="u62_input" type="text" value="" class="u62_input"/>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u63" class="ax_default icon">
+        <img id="u63_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u63.svg"/>
+        <div id="u63_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u64" class="ax_default primary_button">
+        <div id="u64_div" class=""></div>
+        <div id="u64_text" class="text ">
+          <p><span>保存</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u65" class="ax_default primary_button">
+        <div id="u65_div" class=""></div>
+        <div id="u65_text" class="text ">
           <p><span>保存</span></p>
         </div>
       </div>
 
       <!-- Unnamed (形状) -->
-      <div id="u70" class="ax_default icon">
-        <img id="u70_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u70.svg"/>
-        <div id="u70_text" class="text " style="display:none; visibility: hidden">
+      <div id="u66" class="ax_default _形状1">
+        <img id="u66_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u66.svg"/>
+        <div id="u66_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (形状) -->
-      <div id="u71" class="ax_default _形状1">
-        <img id="u71_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u64.svg"/>
-        <div id="u71_text" class="text " style="display:none; visibility: hidden">
+      <div id="u67" class="ax_default icon">
+        <img id="u67_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u63.svg"/>
+        <div id="u67_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u68" class="ax_default _形状1">
+        <img id="u68_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u66.svg"/>
+        <div id="u68_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u72" class="ax_default label">
-        <div id="u72_div" class=""></div>
-        <div id="u72_text" class="text ">
-          <p><span>开启</span></p>
+      <div id="u69" class="ax_default label">
+        <div id="u69_div" class=""></div>
+        <div id="u69_text" class="text ">
+          <p><span>游戏币种：</span></p>
         </div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u73" class="ax_default label">
-        <div id="u73_div" class=""></div>
-        <div id="u73_text" class="text ">
-          <p><span>关闭</span></p>
+      <div id="u70" class="ax_default label">
+        <div id="u70_div" class=""></div>
+        <div id="u70_text" class="text ">
+          <p><span>USDT</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u71" class="ax_default primary_button">
+        <div id="u71_div" class=""></div>
+        <div id="u71_text" class="text ">
+          <p><span>保存</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u72" class="ax_default icon">
+        <img id="u72_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u72.svg"/>
+        <div id="u72_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u73" class="ax_default _形状1">
+        <img id="u73_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u66.svg"/>
+        <div id="u73_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
         </div>
       </div>
 
@@ -322,10 +306,26 @@
         </div>
       </div>
 
-      <!-- Unnamed (文本域) -->
-      <div id="u78" class="ax_default text_area">
+      <!-- Unnamed (矩形) -->
+      <div id="u78" class="ax_default label">
         <div id="u78_div" class=""></div>
-        <textarea id="u78_input" class="u78_input">新增页面内容：
+        <div id="u78_text" class="text ">
+          <p><span>开启</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u79" class="ax_default label">
+        <div id="u79_div" class=""></div>
+        <div id="u79_text" class="text ">
+          <p><span>关闭</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (文本域) -->
+      <div id="u80" class="ax_default text_area">
+        <div id="u80_div" class=""></div>
+        <textarea id="u80_input" class="u80_input">新增页面内容：
 1.新增页面：风控标签条件配置
 2.新页面分页：场馆转出资金风险
 3.配置条件：
@@ -340,37 +340,23 @@
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u79" class="ax_default label">
-        <div id="u79_div" class=""></div>
-        <div id="u79_text" class="text ">
+      <div id="u81" class="ax_default label">
+        <div id="u81_div" class=""></div>
+        <div id="u81_text" class="text ">
           <p><span>倍</span></p>
         </div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u80" class="ax_default _三级标题">
-        <div id="u80_div" class=""></div>
-        <div id="u80_text" class="text ">
+      <div id="u82" class="ax_default _三级标题">
+        <div id="u82_div" class=""></div>
+        <div id="u82_text" class="text ">
           <p><span>用户管理→标签管理→手动标签</span></p>
         </div>
       </div>
 
-      <!-- Unnamed (文本域) -->
-      <div id="u81" class="ax_default text_area">
-        <div id="u81_div" class=""></div>
-        <textarea id="u81_input" class="u81_input">如标签被禁用或删除，则上述逻辑都不成立，重新添加后仍会走上述逻辑。</textarea>
-      </div>
-
       <!-- Unnamed (组合) -->
-      <div id="u82" class="ax_default" data-left="13.9923495816617" data-top="3323.77307316293" data-width="1024.00765041834" data-height="96.2269268370701" layer-opacity="1">
-
-        <!-- Unnamed (线段) -->
-        <div id="u83" class="ax_default line">
-          <img id="u83_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u83.svg"/>
-          <div id="u83_text" class="text " style="display:none; visibility: hidden">
-            <p></p>
-          </div>
-        </div>
+      <div id="u83" class="ax_default" data-left="13.9923495816617" data-top="3323.77307316293" data-width="1024.00765041834" data-height="96.2269268370701" layer-opacity="1">
 
         <!-- Unnamed (线段) -->
         <div id="u84" class="ax_default line">
@@ -380,11 +366,11 @@
           </div>
         </div>
 
-        <!-- Unnamed (矩形) -->
-        <div id="u85" class="ax_default label">
-          <div id="u85_div" class=""></div>
-          <div id="u85_text" class="text ">
-            <p><span>I have bottom line</span></p>
+        <!-- Unnamed (线段) -->
+        <div id="u85" class="ax_default line">
+          <img id="u85_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u85.svg"/>
+          <div id="u85_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
           </div>
         </div>
 
@@ -392,229 +378,245 @@
         <div id="u86" class="ax_default label">
           <div id="u86_div" class=""></div>
           <div id="u86_text" class="text ">
+            <p><span>I have bottom line</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (矩形) -->
+        <div id="u87" class="ax_default label">
+          <div id="u87_div" class=""></div>
+          <div id="u87_text" class="text ">
             <p><span>我是有底线的</span></p>
           </div>
         </div>
 
         <!-- Unnamed (矩形) -->
-        <div id="u87" class="ax_default box_1">
-          <div id="u87_div" class=""></div>
-          <div id="u87_text" class="text " style="display:none; visibility: hidden">
+        <div id="u88" class="ax_default box_1">
+          <div id="u88_div" class=""></div>
+          <div id="u88_text" class="text " style="display:none; visibility: hidden">
             <p></p>
           </div>
         </div>
       </div>
 
       <!-- Unnamed (图片 ) -->
-      <div id="u88" class="ax_default _图片_">
-        <img id="u88_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u88.png"/>
-        <div id="u88_text" class="text " style="display:none; visibility: hidden">
+      <div id="u89" class="ax_default _图片_">
+        <img id="u89_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u89.png"/>
+        <div id="u89_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u89" class="ax_default box_1">
-        <div id="u89_div" class=""></div>
-        <div id="u89_text" class="text ">
+      <div id="u90" class="ax_default box_1">
+        <div id="u90_div" class=""></div>
+        <div id="u90_text" class="text ">
           <p><span>场馆转出资金风险</span></p>
         </div>
       </div>
 
       <!-- Unnamed (图片 ) -->
-      <div id="u90" class="ax_default _图片_">
-        <img id="u90_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u90.png"/>
-        <div id="u90_text" class="text " style="display:none; visibility: hidden">
+      <div id="u91" class="ax_default _图片_">
+        <img id="u91_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u91.png"/>
+        <div id="u91_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u91" class="ax_default label">
-        <div id="u91_div" class=""></div>
-        <div id="u91_text" class="text ">
+      <div id="u92" class="ax_default label">
+        <div id="u92_div" class=""></div>
+        <div id="u92_text" class="text ">
           <p><span>编辑标签内,增加勾选框以及删除标签用户功能</span></p>
         </div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u92" class="ax_default box_1">
-        <div id="u92_div" class=""></div>
-        <div id="u92_text" class="text ">
+      <div id="u93" class="ax_default box_1">
+        <div id="u93_div" class=""></div>
+        <div id="u93_text" class="text ">
           <p><span>场馆转出资金风险</span></p>
         </div>
       </div>
 
       <!-- Unnamed (图片 ) -->
-      <div id="u93" class="ax_default _图片_">
-        <img id="u93_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u93.png"/>
-        <div id="u93_text" class="text " style="display:none; visibility: hidden">
+      <div id="u94" class="ax_default _图片_">
+        <img id="u94_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u94.png"/>
+        <div id="u94_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u94" class="ax_default label">
-        <div id="u94_div" class=""></div>
-        <div id="u94_text" class="text ">
+      <div id="u95" class="ax_default label">
+        <div id="u95_div" class=""></div>
+        <div id="u95_text" class="text ">
           <p><span>风控提款审核页面：</span></p>
         </div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u95" class="ax_default box_1">
-        <div id="u95_div" class=""></div>
-        <div id="u95_text" class="text ">
+      <div id="u96" class="ax_default box_1">
+        <div id="u96_div" class=""></div>
+        <div id="u96_text" class="text ">
           <p><span>场馆转出资金风险</span></p>
         </div>
       </div>
 
       <!-- Unnamed (图片 ) -->
-      <div id="u96" class="ax_default _图片_">
-        <img id="u96_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u96.png"/>
-        <div id="u96_text" class="text " style="display:none; visibility: hidden">
+      <div id="u97" class="ax_default _图片_">
+        <img id="u97_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u97.png"/>
+        <div id="u97_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u97" class="ax_default _文本段落">
-        <div id="u97_div" class=""></div>
-        <div id="u97_text" class="text ">
-          <p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">1.在审核管理---风控提款审核---搜索条件---风控类型---增加选项--名称为：</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">场馆转出资金风险</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;color:#000000;">2.搜索逻辑：因为该标签为手动标签，可能会存在误删情况，假设手动标签被误删，那搜索条件仍会存在但结果为空（因为标签被删除了），则不显示任何内容，正常情况下搜索有会员带有标签则正常显示用户对应信息，无会员带有标签则显示为空</span></p><p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;color:#000000;">3.第2条搜索逻辑是单选时，多选时保持第2条逻辑，不影响其他逻辑展示。</span></p>
+      <div id="u98" class="ax_default _文本段落">
+        <div id="u98_div" class=""></div>
+        <div id="u98_text" class="text ">
+          <p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;">1.在审核管理---风控提款审核---搜索条件---风控类型---增加选项--名称为：</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">场馆转出资金风险</span></p>
         </div>
       </div>
 
       <!-- Unnamed (线段) -->
-      <div id="u98" class="ax_default line">
-        <img id="u98_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u98.svg"/>
-        <div id="u98_text" class="text " style="display:none; visibility: hidden">
+      <div id="u99" class="ax_default line">
+        <img id="u99_img" class="img " src="images/bty游戏资金转账提示新增标签以及设置调整/u99.svg"/>
+        <div id="u99_text" class="text " style="display:none; visibility: hidden">
           <p></p>
         </div>
       </div>
 
       <!-- Unnamed (矩形) -->
-      <div id="u99" class="ax_default label">
-        <div id="u99_div" class=""></div>
-        <div id="u99_text" class="text ">
+      <div id="u100" class="ax_default label">
+        <div id="u100_div" class=""></div>
+        <div id="u100_text" class="text ">
           <p><span>条件3：当条件1不符合时，转出对比转入差额设置</span></p>
         </div>
       </div>
 
       <!-- Unnamed (文本框) -->
-      <div id="u100" class="ax_default text_field">
-        <div id="u100_div" class=""></div>
-        <input id="u100_input" type="text" value="" class="u100_input"/>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u101" class="ax_default label">
+      <div id="u101" class="ax_default text_field">
         <div id="u101_div" class=""></div>
-        <div id="u101_text" class="text ">
-          <p><span>倍</span></p>
-        </div>
+        <input id="u101_input" type="text" value="" class="u101_input"/>
       </div>
 
       <!-- Unnamed (矩形) -->
       <div id="u102" class="ax_default label">
         <div id="u102_div" class=""></div>
         <div id="u102_text" class="text ">
+          <p><span>倍</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u103" class="ax_default label">
+        <div id="u103_div" class=""></div>
+        <div id="u103_text" class="text ">
           <p><span>条件2：当条件1符合时，转出对比转入差额设置</span></p>
         </div>
       </div>
 
       <!-- Unnamed (文本框) -->
-      <div id="u103" class="ax_default text_field">
-        <div id="u103_div" class=""></div>
-        <input id="u103_input" type="text" value="" class="u103_input"/>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u104" class="ax_default label">
+      <div id="u104" class="ax_default text_field">
         <div id="u104_div" class=""></div>
-        <div id="u104_text" class="text ">
-          <p><span>倍</span></p>
-        </div>
+        <input id="u104_input" type="text" value="" class="u104_input"/>
       </div>
 
       <!-- Unnamed (矩形) -->
       <div id="u105" class="ax_default label">
         <div id="u105_div" class=""></div>
         <div id="u105_text" class="text ">
+          <p><span>倍</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u106" class="ax_default label">
+        <div id="u106_div" class=""></div>
+        <div id="u106_text" class="text ">
           <p><span>条件3：当条件1不符合时，转出对比转入差额设置</span></p>
         </div>
       </div>
 
       <!-- Unnamed (文本框) -->
-      <div id="u106" class="ax_default text_field">
-        <div id="u106_div" class=""></div>
-        <input id="u106_input" type="text" value="" class="u106_input"/>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u107" class="ax_default label">
+      <div id="u107" class="ax_default text_field">
         <div id="u107_div" class=""></div>
-        <div id="u107_text" class="text ">
-          <p><span>倍</span></p>
-        </div>
+        <input id="u107_input" type="text" value="" class="u107_input"/>
       </div>
 
       <!-- Unnamed (矩形) -->
       <div id="u108" class="ax_default label">
         <div id="u108_div" class=""></div>
         <div id="u108_text" class="text ">
+          <p><span>倍</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u109" class="ax_default label">
+        <div id="u109_div" class=""></div>
+        <div id="u109_text" class="text ">
           <p><span>条件2：当条件1符合时，转出对比转入差额设置</span></p>
         </div>
       </div>
 
       <!-- Unnamed (文本框) -->
-      <div id="u109" class="ax_default text_field">
-        <div id="u109_div" class=""></div>
-        <input id="u109_input" type="text" value="" class="u109_input"/>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u110" class="ax_default label">
+      <div id="u110" class="ax_default text_field">
         <div id="u110_div" class=""></div>
-        <div id="u110_text" class="text ">
-          <p><span>倍</span></p>
-        </div>
+        <input id="u110_input" type="text" value="" class="u110_input"/>
       </div>
 
       <!-- Unnamed (矩形) -->
       <div id="u111" class="ax_default label">
         <div id="u111_div" class=""></div>
         <div id="u111_text" class="text ">
+          <p><span>倍</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u112" class="ax_default label">
+        <div id="u112_div" class=""></div>
+        <div id="u112_text" class="text ">
           <p><span>条件3：当条件1不符合时，转出对比转入差额设置</span></p>
         </div>
       </div>
 
       <!-- Unnamed (文本框) -->
-      <div id="u112" class="ax_default text_field">
-        <div id="u112_div" class=""></div>
-        <input id="u112_input" type="text" value="" class="u112_input"/>
-      </div>
-
-      <!-- Unnamed (矩形) -->
-      <div id="u113" class="ax_default label">
+      <div id="u113" class="ax_default text_field">
         <div id="u113_div" class=""></div>
-        <div id="u113_text" class="text ">
-          <p><span>倍</span></p>
-        </div>
+        <input id="u113_input" type="text" value="" class="u113_input"/>
       </div>
 
       <!-- Unnamed (矩形) -->
       <div id="u114" class="ax_default label">
         <div id="u114_div" class=""></div>
         <div id="u114_text" class="text ">
+          <p><span>倍</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u115" class="ax_default label">
+        <div id="u115_div" class=""></div>
+        <div id="u115_text" class="text ">
           <p><span>条件1：最低转入金额设置</span></p>
         </div>
       </div>
 
       <!-- Unnamed (文本框) -->
-      <div id="u115" class="ax_default text_field">
-        <div id="u115_div" class=""></div>
-        <input id="u115_input" type="text" value="" class="u115_input"/>
+      <div id="u116" class="ax_default text_field">
+        <div id="u116_div" class=""></div>
+        <input id="u116_input" type="text" value="" class="u116_input"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u117" class="ax_default _文本段落">
+        <div id="u117_div" class=""></div>
+        <div id="u117_text" class="text ">
+          <p><span style="font-family:'Arial Normal', 'Arial', sans-serif;font-weight:400;color:#000000;">如标签被禁用或删除，则上述逻辑都不成立，重新添加后仍会走上述逻辑。</span></p><p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">手动标签是可以删除的，为了防止误删或者操作失误点击了禁用，会增加强制逻辑条件：</span></p><p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial', sans-serif;font-weight:700;color:#D9001B;">当标签用户数大于0时，删除和禁用处于置灰状态（灰色）。当标签用户数等于0时则重新恢复可删除或禁用状态（红色）</span></p>
+        </div>
       </div>
     </div>
     <script src="resources/scripts/axure/ios.js"></script>
